@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_resetpassword"
+        android:title="Đổi Mật Khấu"
+        app:showAsAction="collapseActionView"
+        />
+    <item android:id="@+id/action_logout"
+        android:title="Đăng Xuất"
+        app:showAsAction="collapseActionView"
+        />
+</menu>

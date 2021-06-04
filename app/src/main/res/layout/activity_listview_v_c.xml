@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:id="@+id/itemCoupon"
+    app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/ivDeleteCoupon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/delete"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ivCoupon"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"/>
+
+
+        <TextView
+            android:id="@+id/tvTitleCoupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ivCoupon"
+            android:text="Giảm thêm 300.000đ và freeship dành
+             cho khách mua điện thoại Vsmart online."
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvTimeCoupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvTitleCoupon"
+            android:layout_toRightOf="@id/ivCoupon"
+            android:text="Hạn sử dụng: 12/12/2020"
+            android:textSize="13sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

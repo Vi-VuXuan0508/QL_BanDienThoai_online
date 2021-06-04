@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".FlashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.ForgetActivity" />
+        <activity android:name=".hoai.admin_quanlyhoadon" />
+        <activity android:name=".kien.Login.ListUser_KH_Activity" />
+        <activity android:name=".kien.Login.ListUserActivity" >
+
+        </activity>
+        <activity android:name=".kien.Login.LoginActivity">
+
+        </activity>
+        <activity android:name=".kien.Login.SignUpActivity" />
+        <activity android:name=".nhan.AdminBeginActivity">
+
+        </activity>
+        <activity android:name=".work.ProDuctFinal"
+            android:label="Sẩn Phẩm Đã Mua"/>
+        <activity android:name=".work.Manager"
+            android:label="Quản Lý Đơn Hàng"/>
+        <activity android:name=".work.History"
+            android:label="Lịch Sử Mua Hàng"/>
+        <activity android:name=".work.personal_information"
+            android:label="Thông Tin Cá Nhân"/>
+        <activity android:name=".work.OrderDetail"
+            android:label="Chi Tiết Hóa Đơn"/>
+        <activity android:name=".work.CouponProduct"
+            android:label="Khuyến Mãi"/>
+        <activity android:name=".work.Cart"
+            android:label="Giỏ Hàng"/>
+        <activity android:name=".work.DetailProduct"
+            android:label="Chi Tiết Sản Phẩm"/>
+        <activity android:name=".work.ProDuctCategory"
+            android:label="Sản Phẩm"/>
+        <activity android:name=".Main"
+            >
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.loginfb" />
+        <activity android:name=".Login.Login" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".nhan.Main2Activity" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

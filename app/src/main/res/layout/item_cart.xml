@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+
+        >
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/img_cart_item"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:src="@drawable/iphone11"
+                />
+            <ImageView
+                android:id="@+id/img_cart_clear"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clear"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/img_cart_item"
+                android:layout_marginTop="8dp"
+                android:id="@+id/linear">
+                <TextView
+                    android:id="@+id/txt_title_cart_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Iphone11"/>
+                <TextView
+                    android:id="@+id/txt_cart_infor_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_productcoupon_item"
+
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"
+                    android:text="Màn hình :828 x 1792 Pixels 6.1 inchs, Camera :Dual 12MP Ultra Wide and Wide cameras 12.0 MP, RAM :4 GB, CPU :Apple A13 Bionic"
+                    android:textColor="#787676"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="5sp"
+                    android:textStyle="italic"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txt_price_cart_item"
+                        android:layout_width="wrap_content"
+                        android:textColor="#E73838"
+                        android:text="432135312"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="#E73838"
+                        android:text="VND"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btn_cart_down"
+                        android:textColor="#FFFFFF"
+                        android:background="#A6A4A4"
+
+                        android:text="-"
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"/>
+                    <Button
+                        android:id="@+id/btn_cart_count"
+
+                        android:textColor="#171616"
+                        android:background="#F7F7F7"
+
+                        android:text="1"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"/>
+
+                    <Button
+                        android:id="@+id/btn_cart_up"
+                        android:textColor="#FFFFFF"
+                        android:background="#A6A4A4"
+
+                        android:text="+"
+
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

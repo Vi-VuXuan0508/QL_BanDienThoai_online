@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_bg"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlashActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_imgWelcome"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="80dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp">
+
+        <ImageView
+
+            android:src="@drawable/logoflash"
+            android:scaleType="fitXY"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cardView_imgWelcome"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VICUS SHOP" />
+
+</RelativeLayout>

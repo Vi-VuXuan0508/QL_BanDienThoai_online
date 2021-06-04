@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+        <EditText
+            android:id="@+id/txtTitleProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Title"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/txtCountProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Count"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/txtImagesProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Images"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/txtIdCategoryProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Hãng"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/txtDecriptionCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Decription"
+            android:text="" />
+    <Button
+        android:id="@+id/btnAdd"
+        android:textColor="@color/white"
+        android:background="@drawable/button_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm"/>
+
+
+</LinearLayout>

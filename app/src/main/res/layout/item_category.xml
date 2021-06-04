@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:elevation="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/category_item">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNameCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imvCategory"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/imvDeleteCategory"
+            android:ems="10"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="name " />
+
+        <ImageView
+            android:id="@+id/imvDeleteCategory"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/delete"/>
+
+        <ImageView
+            android:id="@+id/imvCategory"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_launcher_background" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

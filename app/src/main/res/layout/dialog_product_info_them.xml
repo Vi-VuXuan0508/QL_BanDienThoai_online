@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/dialog_update_product_info">
+
+    <EditText
+        android:id="@+id/txtInfo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sceen"
+        android:text="" />
+    <EditText
+        android:id="@+id/txtInfo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Camera sau"
+        android:text="" />
+    <EditText
+        android:id="@+id/txtInfo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Camera Selfie"
+        android:text="" />
+    <EditText
+        android:id="@+id/txtInfo4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ram"
+        android:text="" />
+    <EditText
+        android:id="@+id/txtInfo5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rom"
+        android:text="" />
+    <EditText
+        android:id="@+id/txtInfo6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cpu"
+        android:text="" />
+    <EditText
+        android:id="@+id/txtInfo7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gpu"
+        android:text="" />
+    <EditText
+        android:id="@+id/txtInfo8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pin"
+        android:text="" />
+    <EditText
+        android:id="@+id/txtInfo9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sim"
+        android:text="" />
+    <EditText
+        android:id="@+id/txtInfo10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="System"
+        android:text="" />
+    <EditText
+        android:id="@+id/txtInfo11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Origin"
+        android:text="" />
+    <EditText
+        android:id="@+id/txtInfo12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Year of manufacture"
+        android:text="" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
+        android:textColor="@color/white"
+        android:id="@+id/btnThemInfo"
+        android:text="Thêm"/>
+
+</LinearLayout>

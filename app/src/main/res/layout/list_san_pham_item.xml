@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:elevation="10dp"
+    android:id="@+id/product_item"
+    app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ivavata"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:id="@+id/imvDeleteProduct"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/delete"/>
+        <TextView
+            android:id="@+id/tvNameProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iphone 11 64GB - Sản phẩm chính hãng"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ivavata"/>
+        <TextView
+            android:id="@+id/tvGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18.490.000 VND"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_toRightOf="@+id/ivavata"
+            android:layout_below="@+id/tvNameProduct"/>
+        <TextView
+            android:id="@+id/tvGiam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giảm: "
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/ivavata"
+            android:layout_below="@+id/tvGia"/>
+        <TextView
+            android:id="@+id/tvGiaGiam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.500.000"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tvGiam"
+            android:layout_below="@+id/tvGia" />
+        <TextView
+            android:id="@+id/tvsoluong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng: 1"
+            android:textColor="#2B95CE"
+            android:layout_toRightOf="@+id/ivavata"
+            android:layout_below="@+id/tvGiaGiam"/>
+        <TextView
+            android:id="@+id/tvApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apple"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvGiaGiam"/>
+        <TextView
+            android:id="@+id/tvHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hãng: "
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/tvApple"
+            android:layout_below="@+id/tvGiaGiam"/>
+        <TextView
+            android:id="@+id/decreptionProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivavata"
+            android:layout_below="@id/tvsoluong"
+            android:textStyle="italic"
+            android:textSize="10sp"
+            android:text=""/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

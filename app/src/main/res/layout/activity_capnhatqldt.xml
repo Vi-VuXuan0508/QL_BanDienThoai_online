@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/ivHinhProductUpdate"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/tvUpdateSanPham"
+                android:src="@drawable/picture" />
+
+            <TextView
+                android:id="@+id/tvUpdateSanPham"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="Thêm sản phẩm"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/ivHinhProductUpdate"
+                android:layout_marginTop="10dp"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/txtTSPUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên sản phẩm"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"/>
+                <EditText
+                    android:id="@+id/txtGiaUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Giá"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"/>
+                <EditText
+                    android:id="@+id/txtGGUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Giảm giá"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"/>
+                <EditText
+                    android:id="@+id/txtSLUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Số lượng sản phẩm"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/btnCapNhatSanPham"
+                        android:layout_width="190dp"
+                        android:layout_height="40dp"
+                        android:text="Cập nhật sản phẩm"
+                        android:textColor="@android:color/white"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button_border"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
